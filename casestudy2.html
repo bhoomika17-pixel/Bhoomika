@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bhoomika | Case Study: Cross-Team Design Reviews</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-high": "#292a2c",
+                        "inverse-primary": "#445f8c",
+                        "outline": "#8e909a",
+                        "secondary": "#c5c6cd",
+                        "primary": "#d6e2ff",
+                        "on-surface-variant": "#c4c6d0",
+                        "on-tertiary-fixed": "#191a2c",
+                        "error-container": "#93000a",
+                        "outline-variant": "#43474f",
+                        "surface": "#121315",
+                        "surface-dim": "#121315",
+                        "inverse-on-surface": "#303033",
+                        "secondary-fixed-dim": "#c5c6cd",
+                        "primary-fixed": "#d6e3ff",
+                        "tertiary": "#e2e0f9",
+                        "primary-container": "#acc7fb",
+                        "on-surface": "#e3e2e5",
+                        "surface-container": "#1f2022",
+                        "on-tertiary-fixed-variant": "#454559",
+                        "on-primary-container": "#375380",
+                        "on-secondary-container": "#b4b5bc",
+                        "surface-container-low": "#1b1c1e",
+                        "on-secondary": "#2e3036",
+                        "on-tertiary-container": "#515165",
+                        "surface-container-highest": "#343537",
+                        "primary-fixed-dim": "#acc7fb",
+                        "secondary-fixed": "#e2e2e9",
+                        "background": "#121315",
+                        "on-primary": "#11305b",
+                        "on-error": "#690005",
+                        "on-background": "#e3e2e5",
+                        "on-primary-fixed-variant": "#2b4773",
+                        "tertiary-fixed-dim": "#c6c4dc",
+                        "on-primary-fixed": "#001b3e",
+                        "tertiary-fixed": "#e2e0f9",
+                        "surface-bright": "#38393b",
+                        "on-secondary-fixed": "#191c21",
+                        "surface-container-lowest": "#0d0e10",
+                        "tertiary-container": "#c6c4dc",
+                        "on-secondary-fixed-variant": "#45474d",
+                        "error": "#ffb4ab",
+                        "surface-tint": "#acc7fb",
+                        "on-tertiary": "#2e2f41",
+                        "inverse-surface": "#e3e2e5",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#343537",
+                        "secondary-container": "#45474d"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .editorial-gradient {
+            background: linear-gradient(135deg, #acc7fb 0%, #e2e0f9 100%);
+        }
+        .glass-panel {
+            background: rgba(35, 38, 43, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .ghost-border {
+            outline: 1px solid rgba(142, 144, 154, 0.1);
+        }
+        .masthead-tracking {
+            letter-spacing: -0.04em;
+        }
+        .nav-active-dot::after {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 4px;
+            background-color: #acc7fb;
+            border-radius: 50%;
+            margin: 4px auto 0;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<nav class="fixed top-0 w-full z-50 bg-[#0d0e10]/60 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<span class="text-xl font-extrabold tracking-[0.3em] text-white font-headline">BHOOMIKA</span>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-headline font-extrabold tracking-tight text-[#acc7fb] nav-active-dot transition-all" href="#">Work</a>
+<a class="font-headline font-extrabold tracking-tight text-[#9c9da4] hover:text-white transition-colors" href="#">About</a>
+<button class="editorial-gradient text-on-primary px-6 py-2.5 rounded-xl font-bold hover:opacity-90 transition-all scale-95 active:scale-90 duration-200">
+                    Get in Touch
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="mb-12">
+<span class="text-[#acc7fb] font-headline font-extrabold tracking-widest text-sm mb-4 block">UX RESEARCH LEAD</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold masthead-tracking leading-[1.1] max-w-5xl">
+                    Improving Consistency and Effectiveness of Cross-Team Design Reviews at Scale
+                </h1>
+<p class="mt-6 text-secondary text-xl max-w-3xl leading-relaxed">
+                    Foundational research to clarify roles, expectations, and insight flow in a high-frequency design review program.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-8">
+<div class="aspect-[16/9] bg-surface-container rounded-2xl overflow-hidden ghost-border relative group">
+<img alt="Collaborative workspace" class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ3oApDH_j1rqQ-NWShMdP53uP8aXsgu7gV31Kp0MkMBXconIK1fofqOyqiIFHmnKokbxrJzNIJsPY-gzH5qDHspcMs4Yv1vU3sBKaui4lXbOm2K10NkM7Q-N8jgccweGVOcHBfrQoeLyj0t52uR4-Igt61DYsJunBP_Bp9sNyROhYCfljdndKfrfZDprDuQtcBHOUNB-DmUy9qojV-fj-ySS9Y03U4jtivyeMrSytSZikF3bVOtsf43L5eJIC-L4YTWBKdVhAcWM_"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-secondary/50 font-headline font-bold tracking-widest uppercase text-xs">Design Review Ecosystem</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col justify-between space-y-12">
+<div>
+<h3 class="text-primary font-headline font-extrabold mb-4 uppercase text-xs tracking-widest">The Outcome</h3>
+<p class="text-on-surface leading-relaxed font-normal">
+                            Informed program improvements to increase consistency, strengthen onboarding, and enable a more structured feedback loop across teams for high-frequency (2–4 daily) sessions.
+                        </p>
+</div>
+<div>
+<h3 class="text-primary font-headline font-extrabold mb-4 uppercase text-xs tracking-widest">Role & Scope</h3>
+<ul class="text-on-surface leading-relaxed text-sm space-y-2">
+                            <li>• Defined and led end-to-end research</li>
+                            <li>• Identified gaps in roles and insight flow</li>
+                            <li>• Delivered recommendations to Design System leadership</li>
+                        </ul>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 pt-16 border-t border-outline-variant/10">
+<div class="md:col-span-4">
+<h2 class="font-headline text-3xl font-extrabold masthead-tracking">Context</h2>
+</div>
+<div class="md:col-span-8">
+<div class="prose prose-invert max-w-none">
+<p class="text-secondary text-lg leading-relaxed mb-6">
+                            The program was a required review for new services and high-priority launches. As adoption increased, differences in expectations and unclear roles created friction in how insights were applied across 2–4 daily sessions.
+                        </p>
+<h4 class="text-white font-headline font-bold mb-4">Research Approach</h4>
+<p class="text-secondary text-lg leading-relaxed mb-4">Designed a multi-method study including:</p>
+<ul class="text-secondary text-lg list-disc pl-5 space-y-2">
+                            <li>Stakeholder interviews to define learning goals</li>
+                            <li>Contextual inquiry through live session observation</li>
+                            <li>Focus groups with participating product teams</li>
+                            <li>Semi-structured interviews with reviewers and ambassadors</li>
+                        </ul>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<h2 class="font-headline text-primary font-extrabold mb-12 uppercase text-xs tracking-widest text-center">Program Impact</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container p-10 rounded-xl border-l-4 border-primary relative overflow-hidden transition-transform hover:-translate-y-1 duration-300">
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-extrabold text-white mb-4">Launch Gate Quality</h3>
+<p class="text-secondary leading-relaxed">Increased the effectiveness of reviews as a quality gate, ensuring teams could engage confidently and apply feedback reliably before launch.</p>
+</div>
+</div>
+<div class="bg-surface-container p-10 rounded-xl border-l-4 border-primary relative overflow-hidden transition-transform hover:-translate-y-1 duration-300">
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-extrabold text-white mb-4">Systemized Feedback</h3>
+<p class="text-secondary leading-relaxed">Established a structured mechanism for sharing recurring insights with the design system team, improving visibility into common patterns.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<h2 class="font-headline text-primary font-extrabold mb-12 uppercase text-xs tracking-widest">Key Insights</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="glass-panel p-8 rounded-2xl ghost-border flex flex-col h-full">
+<span class="material-symbols-outlined text-primary mb-6" style="font-variation-settings: 'FILL' 0;">visibility_off</span>
+<h3 class="font-headline text-xl font-extrabold text-white mb-4">Unclear Expectations</h3>
+<p class="text-secondary text-sm leading-relaxed flex-grow">
+                        Participants were less confident in applying feedback when goals, success criteria, and feedback usage were not established early in the process.
+                    </p>
+</div>
+<div class="bg-surface-container-high p-8 rounded-2xl flex flex-col h-full border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mb-6" style="font-variation-settings: 'FILL' 1;">groups</span>
+<h3 class="font-headline text-xl font-extrabold text-white mb-4">Role Ambiguity</h3>
+<p class="text-secondary text-sm leading-relaxed flex-grow">
+                        Confusion between reviewers, ambassadors, and facilitators led to hesitation and inconsistent engagement during high-frequency sessions.
+                    </p>
+</div>
+<div class="glass-panel p-8 rounded-2xl ghost-border flex flex-col h-full">
+<span class="material-symbols-outlined text-primary mb-6" style="font-variation-settings: 'FILL' 0;">sync_problem</span>
+<h3 class="font-headline text-xl font-extrabold text-white mb-4">Inconsistent Flow</h3>
+<p class="text-secondary text-sm leading-relaxed flex-grow">
+                        While recurring themes surfaced, there was no structured way to capture or route insights to inform design system guidance and prioritization.
+                    </p>
+</div>
+</div>
+</section>
+<section class="max-w-5xl mx-auto px-8 mb-32">
+<div class="bg-surface-container-low p-16 rounded-3xl relative overflow-hidden">
+<span class="material-symbols-outlined absolute -top-4 -left-4 text-primary/10 text-9xl select-none" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="relative z-10 text-center">
+<p class="font-body italic text-2xl md:text-3xl text-on-surface leading-relaxed mb-8">
+                        "Program experiences scale successfully when expectations are explicit, roles are clearly defined, and insights flow efficiently between participants and platform teams."
+                    </p>
+<div class="flex flex-col items-center">
+<span class="font-headline font-extrabold text-primary tracking-widest text-xs uppercase">The Reflection</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#0d0e10] w-full py-16 px-8 border-t border-[#9c9da4]/10">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="text-lg font-extrabold text-white mb-4 block font-headline tracking-widest">BHOOMIKA</span>
+<p class="text-[#9c9da4] font-body text-sm">© 2026 Bhoomika. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-8">
+<a class="text-[#9c9da4] hover:text-white transition-colors font-body text-sm" href="#">Work</a>
+<a class="text-[#9c9da4] hover:text-white transition-colors font-body text-sm" href="#">About</a>
+<a class="text-[#9c9da4] hover:text-white transition-colors font-body text-sm" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>
