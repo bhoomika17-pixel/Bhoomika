@@ -1,210 +1,101 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Bhoomika | AI-Assisted Tool Evaluation Case Study</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-bright": "#282c33",
-                        "on-primary-fixed-variant": "#415c89",
-                        "inverse-surface": "#faf9fb",
-                        "on-primary": "#24406c",
-                        "outline-variant": "#45484e",
-                        "tertiary-fixed": "#d9d7f8",
-                        "background": "#0d0e10",
-                        "on-secondary": "#1e2025",
-                        "on-surface-variant": "#a9abb2",
-                        "on-error": "#490106",
-                        "surface-container-low": "#121316",
-                        "on-tertiary-fixed": "#373851",
-                        "on-tertiary": "#53536e",
-                        "primary-container": "#2b4773",
-                        "on-secondary-fixed": "#3d3f44",
-                        "secondary-fixed-dim": "#d3d4da",
-                        "on-primary-fixed": "#233f6b",
-                        "inverse-primary": "#445f8d",
-                        "secondary-container": "#393b40",
-                        "inverse-on-surface": "#555557",
-                        "on-background": "#e3e5ed",
-                        "on-error-container": "#ff9993",
-                        "tertiary-fixed-dim": "#cbc9e9",
-                        "tertiary": "#e8e6ff",
-                        "surface": "#0d0e10",
-                        "surface-container-lowest": "#000000",
-                        "surface-variant": "#23262b",
-                        "outline": "#73757c",
-                        "surface-container": "#181a1d",
-                        "primary": "#acc7fb",
-                        "on-primary-container": "#b9d1ff",
-                        "on-secondary-container": "#bebfc5",
-                        "surface-container-high": "#1d2024",
-                        "surface-dim": "#0d0e10",
-                        "surface-container-highest": "#23262b",
-                        "primary-fixed-dim": "#c0d5ff",
-                        "on-surface": "#e3e5ed",
-                        "surface-tint": "#acc7fb",
-                        "secondary-fixed": "#e2e2e8",
-                        "primary-fixed": "#d6e3ff",
-                        "tertiary-dim": "#cbc9e9",
-                        "on-tertiary-fixed-variant": "#54546f",
-                        "primary-dim": "#9eb9ec",
-                        "error-dim": "#bb5551",
-                        "error": "#ee7d77",
-                        "error-container": "#7f2927",
-                        "secondary": "#9c9da4",
-                        "secondary-dim": "#9c9da4",
-                        "on-secondary-fixed-variant": "#5a5b61",
-                        "on-tertiary-container": "#4a4a65",
-                        "tertiary-container": "#d9d7f8"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Manrope"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    }
-                },
-            },
-        }
-    </script>
-    <style>
-        body { background-color: #0d0e10; color: #e3e5ed; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .editorial-gradient { background: linear-gradient(135deg, #acc7fb 0%, #2b4773 100%); }
-        .glass-panel { background: rgba(35, 38, 43, 0.6); backdrop-filter: blur(20px); }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Interface Tool Case Study</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.25rem;
+    }
+    a { color: #0b57d0; }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+    h2 { margin-top: 2rem; }
+  </style>
 </head>
-<body class="selection:bg-primary/30 selection:text-primary">
+<body>
 
-<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(172,199,251,0.04)]">
-    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto font-['Manrope'] tracking-tight">
-        <div class="text-xl font-bold tracking-tighter text-slate-50 uppercase tracking-widest">Bhoomika</div>
-        <div class="hidden md:flex items-center gap-8">
-            <a class="text-indigo-300 font-semibold border-b border-indigo-300/30 pb-1" href="#">Work</a>
-            <a class="text-slate-400 hover:text-slate-100 transition-colors" href="#">About</a>
-        </div>
-        <button class="editorial-gradient text-on-primary-fixed-variant px-6 py-2 rounded-xl font-bold active:scale-95 duration-200 transition-all">
-            Get in Touch
-        </button>
-    </div>
-</nav>
+<a href="#main">Skip to main content</a>
 
-<main class="pt-32 pb-20">
-    <header class="max-w-7xl mx-auto px-8 mb-24">
-        <div class="mb-8">
-            <span class="text-primary font-label text-sm tracking-[0.2em] font-bold uppercase">Foundational UX Research</span>
-        </div>
-        <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-none text-on-surface mb-12 max-w-4xl">
-            AI-Assisted Interface Generation: Guiding Strategic Product Direction
-        </h1>
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
-            <div class="md:col-span-8 aspect-[16/9] overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/10">
-                <div class="w-full h-full bg-gradient-to-br from-slate-800 to-black flex items-center justify-center">
-                    <span class="text-slate-600 font-bold font-headline tracking-widest uppercase">Case Study Visual</span>
-                </div>
-            </div>
-            <div class="md:col-span-4 space-y-12">
-                <section>
-                    <h2 class="text-primary font-label text-xs tracking-widest font-bold mb-4 uppercase">The Outcome</h2>
-                    <p class="text-on-surface-variant leading-relaxed">
-                        Led 0→1 research for an AI interface tool, identifying workflow friction that risked adoption. By aligning the roadmap with builder behaviors, we reclaimed 480+ engineering hours and pivoted the MVP toward high-value features.
-                    </p>
-                </section>
-                <section>
-                    <h2 class="text-primary font-label text-xs tracking-widest font-bold mb-4 uppercase">Role & Scope</h2>
-                    <p class="text-on-surface-variant leading-relaxed">
-                        <strong>Lead UX Researcher:</strong> Multi-phase strategy, concept validation with 12 experts, and a longitudinal study involving 48 participants across 4 cohorts.
-                    </p>
-                </section>
-            </div>
-        </div>
-    </header>
+<header>
+  <h1>Case Study</h1>
 
-    <article class="max-w-7xl mx-auto px-8">
-        <div class="py-24 border-t border-outline-variant/10">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-4">
-                    <h2 class="font-headline text-3xl font-bold tracking-tight text-on-surface">Context</h2>
-                </div>
-                <div class="md:col-span-8">
-                    <p class="text-lg text-on-surface-variant leading-relaxed mb-6">
-                        As builder teams faced friction with repetitive interface construction, leadership explored a prompt-driven AI tool. However, the team faced key uncertainties: Would prompt-based generation align with existing workflows, and would users trust the output? Without early validation, there was a high risk of investing in capabilities that would not be adopted.
-                    </p>
-                </div>
-            </div>
-        </div>
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <div class="py-24 border-t border-outline-variant/10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="p-10 bg-surface-container-high rounded-xl border-l-4 border-primary shadow-2xl">
-                    <h3 class="text-primary font-headline text-5xl font-extrabold mb-4">480+</h3>
-                    <h4 class="font-bold text-on-surface text-xl mb-2">Engineering Hours Reclaimed</h4>
-                    <p class="text-on-surface-variant">Identified misaligned feature directions (like direct code export) early, preventing unnecessary development effort and resource waste.</p>
-                </div>
-                <div class="p-10 bg-surface-container-high rounded-xl border-l-4 border-primary shadow-2xl">
-                    <h3 class="text-primary font-headline text-5xl font-extrabold mb-4">Pivot</h3>
-                    <h4 class="font-bold text-on-surface text-xl mb-2">Strategic MVP Realignment</h4>
-                    <p class="text-on-surface-variant">Synthesized findings for Director-VP leadership to shift focus from "prompt-from-scratch" to visual starting points and rapid iteration workflows.</p>
-                </div>
-            </div>
-        </div>
+<main id="main">
 
-        <div class="py-24 border-t border-outline-variant/10">
-            <h2 class="font-headline text-3xl font-bold tracking-tight text-on-surface mb-16">Key Insights</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="glass-panel p-8 rounded-xl border border-outline-variant/5">
-                    <div class="tertiary-container text-on-tertiary-container inline-flex items-center px-3 py-1 rounded-full text-xs font-bold mb-6 uppercase">Learnability</div>
-                    <h3 class="font-headline text-xl font-bold mb-4 text-on-surface">Prompt Fatigue</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Users struggled to construct effective prompts. This friction slowed effective use and highlighted the need for better system transparency.</p>
-                </div>
-                <div class="bg-surface-container-high p-8 rounded-xl">
-                    <div class="tertiary-container text-on-tertiary-container inline-flex items-center px-3 py-1 rounded-full text-xs font-bold mb-6 uppercase">Trust</div>
-                    <h3 class="font-headline text-xl font-bold mb-4 text-on-surface">The Transparency Gap</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Unclear system behavior and unexplained errors reduced trust. Users preferred refining existing designs over generating new ones from scratch.</p>
-                </div>
-                <div class="glass-panel p-8 rounded-xl border border-outline-variant/5">
-                    <div class="tertiary-container text-on-tertiary-container inline-flex items-center px-3 py-1 rounded-full text-xs font-bold mb-6 uppercase">Integration</div>
-                    <h3 class="font-headline text-xl font-bold mb-4 text-on-surface">Workflow Friction</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Even technically correct outputs failed if they didn't fit existing team frameworks. Integration was more valuable than raw generation.</p>
-                </div>
-            </div>
-        </div>
+<h1>Improving Learnability, Trust, and Workflow Fit in an AI-Assisted Interface Generation Tool</h1>
 
-        <div class="py-24 border-t border-outline-variant/10">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-                <div class="md:col-span-4">
-                    <h2 class="font-headline text-3xl font-bold tracking-tight text-on-surface">Reflection</h2>
-                </div>
-                <div class="md:col-span-8">
-                    <div class="p-10 bg-surface-container-lowest rounded-xl italic text-on-surface-variant relative">
-                        <span class="material-symbols-outlined absolute -top-4 -left-4 text-primary text-4xl opacity-50">format_quote</span>
-                        This study reinforced that the adoption of AI-powered tools depends less on technical capability and more on clear mental models and seamless workflow integration. Builders must understand how a system works before they can trust and rely on it.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </article>
+<h2>Overview</h2>
+<p>
+Led foundational and longitudinal research for an early-stage AI-assisted interface generation tool, helping guide product direction toward workflow-aligned capabilities.
+</p>
+
+<h2>Context</h2>
+<p>
+Builder teams sought faster ways to create design-system-aligned interfaces. Leadership explored a generative AI tool to support this process.
+</p>
+
+<h2>Role</h2>
+<p>
+Led a multi-phase research effort including concept validation and longitudinal evaluation with cross-functional users.
+</p>
+
+<h2>Research Approach</h2>
+<ul>
+  <li>Concept validation with designers and developers</li>
+  <li>Longitudinal evaluation with real workflow usage</li>
+  <li>Follow-up interviews</li>
+</ul>
+
+<h2>Key Insights</h2>
+
+<h3>Learnability gaps slowed adoption</h3>
+<p>Users struggled to effectively interact with the system and evaluate outputs.</p>
+
+<h3>Transparency impacted trust</h3>
+<p>Unclear system behavior reduced confidence and discouraged iteration.</p>
+
+<h3>Workflow integration determined value</h3>
+<p>Users expected the tool to fit into existing workflows.</p>
+
+<h3>Visual iteration was preferred</h3>
+<p>Users favored iterating on existing designs rather than starting from scratch.</p>
+
+<h2>Impact</h2>
+<ul>
+  <li>Helped identify misalignment in early feature directions</li>
+  <li>Guided focus toward workflow-aligned capabilities</li>
+  <li>Supported ongoing product direction during development</li>
+</ul>
+
+<h2>Reflection</h2>
+<p>
+AI tools succeed when they align with user workflows, provide transparency, and support clear mental models.
+</p>
+
+<p><em>Details have been generalized to respect confidentiality. Full case study available upon request.</em></p>
+
 </main>
 
-<footer class="bg-black w-full py-20 mt-32 border-t border-slate-800/20">
-    <div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-8 text-sm">
-        <div class="text-lg font-black text-slate-200 uppercase tracking-widest">Bhoomika</div>
-        <div class="text-slate-500 text-center md:text-right">
-            © 2026 UX Research Portfolio.
-        </div>
-    </div>
+<footer>
+  <p>© Your Name</p>
 </footer>
+
 </body>
 </html>
