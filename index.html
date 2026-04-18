@@ -1,109 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name – UX Researcher</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 1.25rem;
-    }
-    a { color: #0b57d0; }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 1rem;
-    }
-  </style>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UXR Portfolio | PhD Senior User Experience Researcher</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#0d0e10",
+                    "secondary-container": "#45474d",
+                    "error": "#ffb4ab",
+                    "on-surface": "#e3e2e5",
+                    "tertiary-fixed": "#e2e0f9",
+                    "on-tertiary-fixed": "#191a2c",
+                    "on-secondary-fixed": "#191c21",
+                    "surface-container-highest": "#343537",
+                    "primary-container": "#acc7fb",
+                    "primary": "#d6e2ff",
+                    "surface-bright": "#38393b",
+                    "on-primary-fixed-variant": "#2b4773",
+                    "surface-container-high": "#292a2c",
+                    "on-error": "#690005",
+                    "inverse-on-surface": "#303033",
+                    "tertiary": "#e2e0f9",
+                    "outline": "#8e909a",
+                    "tertiary-container": "#c6c4dc",
+                    "surface-container-low": "#1b1c1e",
+                    "on-secondary": "#2e3036",
+                    "on-surface-variant": "#c4c6d0",
+                    "inverse-surface": "#e3e2e5",
+                    "surface-variant": "#343537",
+                    "error-container": "#93000a",
+                    "on-background": "#e3e2e5",
+                    "surface-dim": "#121315",
+                    "background": "#121315",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary": "#2e2f41",
+                    "on-secondary-container": "#b4b5bc",
+                    "on-secondary-fixed-variant": "#45474d",
+                    "secondary-fixed-dim": "#c5c6cd",
+                    "outline-variant": "#43474f",
+                    "on-tertiary-fixed-variant": "#454559",
+                    "on-primary-fixed": "#001b3e",
+                    "on-primary-container": "#375380",
+                    "secondary": "#c5c6cd",
+                    "on-primary": "#11305b",
+                    "primary-fixed-dim": "#acc7fb",
+                    "surface-container": "#1f2022",
+                    "secondary-fixed": "#e2e2e9",
+                    "primary-fixed": "#d6e3ff",
+                    "tertiary-fixed-dim": "#c6c4dc",
+                    "surface-tint": "#acc7fb",
+                    "surface": "#121315",
+                    "on-tertiary-container": "#515165",
+                    "inverse-primary": "#445f8c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .editorial-gradient {
+            background: linear-gradient(135deg, #acc7fb 0%, #e2e0f9 100%);
+        }
+        .glass-panel {
+            background: rgba(35, 38, 43, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .ghost-border {
+            outline: 1px solid rgba(142, 144, 154, 0.1);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0d0e10;
+            color: #e3e2e5;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-
-<a href="#main">Skip to main content</a>
-
-<header>
-  <h1>Your Name</h1>
-  <p>UX Researcher focused on AI, workflows, and trust</p>
-
-  <nav aria-label="Primary">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main id="main">
-
-  <section>
-    <h2>Selected Work</h2>
-
-    <article>
-      <h3>
-        <a href="case-study-ai-interface-tool.html">
-          Improving Learnability, Trust, and Workflow Fit in an AI-Assisted Interface Tool
-        </a>
-      </h3>
-      <p>
-        Research on an early-stage AI tool, focusing on adoption, trust, and workflow integration.
-      </p>
-    </article>
-
-    <article>
-      <h3>
-        <a href="casestudy2.html">
-          Improving Consistency and Effectiveness of Cross-Team Design Reviews at Scale
-        </a>
-      </h3>
-      <p>
-        Foundational research to clarify roles, expectations, and insight flow in a high-frequency design review program.
-      </p>
-    </article>
-
-    <article>
-      <h3>
-        <a href="CaseStudy3.html">
-          Guiding Scalable AI Experience Patterns Through Foundational Research
-        </a>
-      </h3>
-      <p>
-        Uncovering gaps in trust, interaction patterns, and contribution workflows to inform AI design system strategy across builder teams.
-      </p>
-    </article>
-
-    <article>
-      <h3>
-        <a href="case study4.html">
-          Improving Link Legibility and Accessibility Across Enterprise Experiences
-        </a>
-      </h3>
-      <p>
-        Mixed-method research resolving a high-stakes accessibility decision through controlled evaluation and inclusive feedback.
-      </p>
-    </article>
-
-    <article>
-      <h3>
-        <a href="case study 5.html">
-          Scaling Design Systems: Research-Led Strategies for 200+ Teams
-        </a>
-      </h3>
-      <p>
-        Optimizing developer adoption and technical consistency for global service teams by reconciling platform standards with engineering velocity.
-      </p>
-    </article>
-
-  </section>
-
+<body class="antialiased">
+<nav class="fixed top-0 w-full z-50 bg-[#0d0e10]/60 backdrop-blur-[20px] border-b border-white/10">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-white font-['Manrope']">
+                UXR Portfolio
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#acc7fb] relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1 after:h-1 after:bg-[#acc7fb] after:rounded-full font-['Inter'] text-[0.875rem] font-medium tracking-wide" href="#">Work</a>
+<a class="text-[#9c9da4] hover:text-white transition-colors font-['Inter'] text-[0.875rem] font-medium tracking-wide" href="#">About</a>
+<a class="text-[#9c9da4] hover:text-white transition-colors font-['Inter'] text-[0.875rem] font-medium tracking-wide" href="#">Insights</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-4 text-[#9c9da4]">
+<span class="material-symbols-outlined cursor-pointer hover:text-[#acc7fb] transition-colors" data-icon="mail">mail</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-[#acc7fb] transition-colors" data-icon="description">description</span>
+</div>
+<a class="editorial-gradient text-on-primary-fixed font-bold py-2.5 px-6 rounded-xl text-sm transition-transform active:scale-95" href="#">Resume</a>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-8">
+<h1 class="text-[#acc7fb] font-headline font-extrabold text-[3.5rem] md:text-[5rem] leading-[1.1] tracking-[-0.04em] mb-12">
+                        Defining the next <br/> era of research.
+                    </h1>
+<p class="text-on-surface-variant text-xl md:text-2xl leading-relaxed max-w-3xl font-body">
+                        I am a PhD Senior UXR specializing in 0→1 strategic discovery for enterprise design systems and AI tooling. I focus on platform-scale productivity and accessibility, with an evidence-based commitment to increasing AI trust by tackling model hallucinations and algorithmic bias.
+                    </p>
+</div>
+<div class="lg:col-span-4 flex justify-end">
+<div class="w-full aspect-[4/5] bg-surface-container rounded-3xl overflow-hidden relative ghost-border">
+<img alt="Professional portrait of a PhD Senior UXR" class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a woman researcher with dark hair, wearing a white shirt, against a dark background" src="https://lh3.googleusercontent.com/aida/ADBb0uhXLlaNN8vvXlAvsfWZRDCq7InLdloGX4zof9FjfXXbEz4ENGJE9XABVXe_6-ZI4RTgo2-RiV50OEhV3kSD_A1DWF7PrG2YstYQIAAHBbICjfmWeps8tqGYPCsusv2IR4wRfU_tjNtfYkgoqFjt4OtryuNzmFuXw5xzJDoot-Ln4NK-b7zaDEMF8bxXzJNKvbRmDaJNzRkHnpYhUrqD1sqkVU1PdPLvwxLGpJc6c1LvIaWo3wkfiJrYBlQn9mlGGrmpQ8HefedeSQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 mb-40" id="work">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="text-[#acc7fb] font-label uppercase tracking-widest text-xs mb-4 block">Case Studies</span>
+<h2 class="text-white font-headline font-extrabold text-4xl tracking-tight">Featured Work</h2>
+</div>
+<div class="text-[#9c9da4] font-body text-sm max-w-xs">
+                    Synthesizing complex user behaviors into actionable design strategies for global platforms.
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<a class="group flex flex-col h-full bg-surface-container rounded-2xl overflow-hidden border-l-4 border-primary-container ghost-border transition-all duration-300 hover:bg-surface-container-high" href="CaseStudy3.html">
+<div class="aspect-video w-full overflow-hidden bg-surface-container-highest">
+<img alt="AI Strategy" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<span class="text-[#acc7fb] font-label text-[10px] uppercase tracking-widest mb-3">Artificial Intelligence</span>
+<h3 class="text-white font-headline font-bold text-xl mb-4 leading-tight">Guiding Scalable AI Experience Patterns</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-8">Foundational research for AI design system strategy, focusing on prompt engineering and output trust.</p>
+<div class="mt-auto flex items-center text-[#acc7fb] font-medium text-sm group-hover:gap-2 transition-all">
+                            View Case Study <span class="material-symbols-outlined ml-2 text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</a>
+<a class="group flex flex-col h-full bg-surface-container rounded-2xl overflow-hidden border-l-4 border-primary-container ghost-border transition-all duration-300 hover:bg-surface-container-high" href="casestudy2.html">
+<div class="aspect-video w-full overflow-hidden bg-surface-container-highest">
+<img alt="Process Optimization" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<span class="text-[#acc7fb] font-label text-[10px] uppercase tracking-widest mb-3">Enterprise Systems</span>
+<h3 class="text-white font-headline font-bold text-xl mb-4 leading-tight">Improving Consistency of Cross-Team Design Reviews</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-8">Optimizing high-frequency review programs across distributed product orgs to reduce shipping friction.</p>
+<div class="mt-auto flex items-center text-[#acc7fb] font-medium text-sm group-hover:gap-2 transition-all">
+                            View Case Study <span class="material-symbols-outlined ml-2 text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</a>
+<a class="group flex flex-col h-full bg-surface-container rounded-2xl overflow-hidden border-l-4 border-primary-container ghost-border transition-all duration-300 hover:bg-surface-container-high" href="case study4.html">
+<div class="aspect-video w-full overflow-hidden bg-surface-container-highest">
+<img alt="Accessibility" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<span class="text-[#acc7fb] font-label text-[10px] uppercase tracking-widest mb-3">Accessibility</span>
+<h3 class="text-white font-headline font-bold text-xl mb-4 leading-tight">Accessible Interaction Styling Standard</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-8">Mixed-method research for platform accessibility that influenced global styling tokens.</p>
+<div class="mt-auto flex items-center text-[#acc7fb] font-medium text-sm group-hover:gap-2 transition-all">
+                            View Case Study <span class="material-symbols-outlined ml-2 text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</a>
+<a class="group flex flex-col h-full bg-surface-container rounded-2xl overflow-hidden border-l-4 border-primary-container ghost-border transition-all duration-300 hover:bg-surface-container-high" href="case-study-ai-interface-tool.html">
+<div class="aspect-video w-full overflow-hidden bg-surface-container-highest">
+<img alt="AI Interface Tool" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=800&q=80"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<span class="text-[#acc7fb] font-label text-[10px] uppercase tracking-widest mb-3">Artificial Intelligence</span>
+<h3 class="text-white font-headline font-bold text-xl mb-4 leading-tight">Improving Learnability, Trust, and Workflow Fit in an AI-Assisted Interface Tool</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-8">Research on an early-stage AI tool, focusing on adoption, trust, and workflow integration.</p>
+<div class="mt-auto flex items-center text-[#acc7fb] font-medium text-sm group-hover:gap-2 transition-all">
+                            View Case Study <span class="material-symbols-outlined ml-2 text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</a>
+<a class="group flex flex-col h-full bg-surface-container rounded-2xl overflow-hidden border-l-4 border-primary-container ghost-border transition-all duration-300 hover:bg-surface-container-high" href="case study 5.html">
+<div class="aspect-video w-full overflow-hidden bg-surface-container-highest">
+<img alt="Design Systems" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<span class="text-[#acc7fb] font-label text-[10px] uppercase tracking-widest mb-3">Design Systems</span>
+<h3 class="text-white font-headline font-bold text-xl mb-4 leading-tight">Scaling Design Systems: Research-Led Strategies for 200+ Teams</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-8">Optimizing developer adoption and technical consistency for global service teams by reconciling platform standards with engineering velocity.</p>
+<div class="mt-auto flex items-center text-[#acc7fb] font-medium text-sm group-hover:gap-2 transition-all">
+                            View Case Study <span class="material-symbols-outlined ml-2 text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</a>
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-8 mb-40">
+<div class="editorial-gradient rounded-[2rem] p-12 md:p-20 text-on-primary-fixed-variant relative overflow-hidden">
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl mb-8 leading-tight">Let's build more ethical, intelligent systems.</h2>
+<p class="text-lg md:text-xl font-medium mb-12 opacity-90">Currently open to senior leadership opportunities and strategic advisory roles within AI-first organizations.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-surface-container-lowest text-white font-bold py-4 px-10 rounded-xl hover:opacity-90 transition-all">Get in touch</button>
+<button class="ghost-border bg-white/10 backdrop-blur-sm text-surface-container-lowest font-bold py-4 px-10 rounded-xl hover:bg-white/20 transition-all">View Research Log</button>
+</div>
+</div>
+<div class="absolute top-1/2 right-0 -translate-y-1/2 opacity-10 hidden lg:block">
+<span class="material-symbols-outlined text-[300px]" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</div>
+</section>
 </main>
-
-<footer>
-  <p>© Your Name</p>
+<footer class="bg-[#0d0e10] w-full py-12 px-8 border-t border-white/10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-bold text-white font-headline">UXR Portfolio</div>
+<div class="text-[#9c9da4] font-['Inter'] text-[0.75rem] font-medium tracking-wide uppercase">
+                © 2024 PhD Senior UXR. Built with Editorial Intelligence.
+            </div>
+<div class="flex gap-8">
+<a class="text-[#9c9da4] hover:text-white transition-colors font-['Inter'] text-[0.75rem] font-medium tracking-wide uppercase" href="#">LinkedIn</a>
+<a class="text-[#9c9da4] hover:text-white transition-colors font-['Inter'] text-[0.75rem] font-medium tracking-wide uppercase" href="#">Google Scholar</a>
+<a class="text-[#9c9da4] hover:text-white transition-colors font-['Inter'] text-[0.75rem] font-medium tracking-wide uppercase" href="#">Read.cv</a>
+</div>
+</div>
 </footer>
-
-</body>
-</html>
+</body></html>
